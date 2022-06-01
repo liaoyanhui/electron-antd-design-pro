@@ -1,0 +1,227 @@
+.order_header {
+  color: #4d4d4d;
+  font-weight: bold;
+  font-size: 22px;
+}
+.order_detail {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  .order_left {
+    > div {
+      margin: 2px 0;
+    }
+    > div > span:last-child {
+      margin-left: 6px;
+    }
+  
+    .type_status {
+      color: #02a3e2;
+    }
+    .order_product, .order_user {
+      margin-top: 20px;
+    }
+  }
+  
+  .order_content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    .other_font {
+      display: inline-block;
+      // width: 200px;
+      // min-width: 160px;
+      height: 34px;
+      line-height: 34px;
+      // overflow: hidden;
+      font-size: 20px;
+      font-weight: bold;
+      // white-space: nowrap;
+      // text-align: right;
+      // text-overflow: ellipsis;
+      word-break:normal;
+      display:block; 
+      white-space:pre-wrap;
+      word-wrap : break-word ;
+      overflow: hidden;
+      color: #BCBCBC;
+      margin: 0 4px;
+    }
+    .order_content_left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 45%;
+      // height: 110px;
+      .left_top {
+        display: flex;
+        justify-content: space-between;
+        > div {
+          flex: 1;
+        }
+      }
+      .left_bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+        > div {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+        }
+      }
+    }
+
+    .order_content_right {
+      display: flex;
+      justify-content: space-between;
+      // width: 53%;
+      // height: 110px;
+      padding-right: 20px;
+      .right_title {
+        color: #bcbcbc;
+        text-align: right;
+      }
+      .right_info > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .content_title, .content_title_cny {
+        display: inline-block;
+        width: 60px;
+        text-align: center;
+        margin-right: 15px;
+      }
+      .content_title_cny {
+        width: 40px;
+      }
+    }
+  }
+}
+
+.content {
+  background-color: #fff;
+}
+
+.content_list {
+  margin: 20px 0;
+  background-color: #fff;
+  padding: 38px 47px;
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+  .content_title {
+    color: @primary-color;
+    // width: 115px;
+    padding-left: 56px;
+    margin-bottom: 10px;
+  }
+  .small_title {
+    // color: @primary-color; 
+    padding-left: 56px;
+  }
+  .list_box {
+    flex: 1;
+  }
+  .list {
+    background-color: #F9F9F9;
+    flex: 1;
+    padding: 5px 56px;
+    margin-bottom: 10px;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      margin: 5px 0;
+      li {
+        flex: 1;
+        flex-shrink: 0;
+      }
+      .tx_message {
+        color: @primary-color;
+        cursor: pointer;
+      }
+      .dot {
+        display: inline-block;
+        width: 200px;
+        overflow:hidden; //超出的文本隐藏
+        text-overflow:ellipsis; //溢出用省略号显示
+        white-space:nowrap; //溢出不换行
+      }
+    }
+    .ul_list {
+      color: #bcbcbc
+    }
+  }
+}
+
+.step {
+  background-color: #fff;
+}
+.title {
+  height: 80px;
+  padding-left: 30px;
+  line-height: 80px;
+  border-bottom: 1px solid #eef0f3;
+}
+
+.step_box {
+  padding: 50px 0;
+}
+
+.sealing {
+  background-color: #fff;
+  margin-top: 20px;
+  // sealing
+  // display:table-cell;
+  ul {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    li {
+      display: flex;
+      align-items: center;
+      margin-right: 50px;
+    }
+  }
+  .hashRate_init, .hashRate {
+    color: #1890ff;
+    margin-left: 5px;
+    font-size: 18px;
+  }
+  .hashRate {
+    font-size: 32px;
+    font-weight: bold;
+  }
+}
+
+.modal {
+  :global(.ant-modal-footer) {
+    height: 70px;
+    text-align: center;
+    border-top: none;
+  }
+  :global(.ant-modal-header) {
+    border-bottom: none;
+  }
+  .orderNumber {
+    margin-bottom: 20px;
+    color: @primary-color;
+  }
+  .content_ul {
+    display: flex;
+  }
+  .number {
+    height: 32px;
+    line-height: 32px;
+  }
+  li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70px;
+    margin-right: 20px;
+  }
+}

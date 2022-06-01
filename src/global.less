@@ -1,0 +1,105 @@
+@import '~antd/es/style/themes/default.less';
+
+* {
+  // user-select: none;
+}
+
+html,
+body,
+#root {
+  min-height: 100vh !important;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh !important;
+  // background-color: rgba(153,153,153, .05) !important;
+}
+.ant-pro-sider.ant-layout-sider.ant-pro-sider-fixed {
+  left: unset;
+}
+
+canvas {
+  display: block;
+}
+
+body { 
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+:global(.ant-pro-global-header-logo) {
+  img {
+    height: 16px !important;
+  }
+}
+
+.ant-table {
+  &-thead > tr,
+  &-tbody > tr {
+    > th,
+    > td {
+      border-bottom: none !important;
+    }
+  }
+}
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        border-bottom: none !important;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active), (-ms-high-contrast: none) {
+  body .ant-design-pro > .ant-layout {
+    min-height: 100vh;
+  }
+}
+
+
+
+/** 滚动条样式 **/
+::-webkit-scrollbar {
+	width: 5px;/*竖向滚动条的宽度*/
+	height: 5px;/*横向滚动条的高度*/
+}
+/*滚动条轨道的样式*/
+::-webkit-scrollbar-track {
+	// -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+/*滚动条轨道内滑块的样式*/
+::-webkit-scrollbar-thumb {
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	background: rgba(155,155,155,0.8);
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+/*当焦点不在当前区域滑块的状态（具体为什么要加这句有点忘了，记得是跟刷新时有关）*/
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(155,155,155,0.4);
+}

@@ -1,0 +1,205 @@
+.modal {
+  :global(.ant-modal-footer) {
+    height: 70px;
+    text-align: center;
+    border-top: none;
+  }
+  :global(.ant-modal-header) {
+    border-bottom: none;
+  }
+  :global(.ant-modal-body) {
+    padding: 24px 24px 5px 24px;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.box {
+  position: relative;
+  .btn {
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: 48px;
+  }
+}
+.checkStatement {
+  min-height: calc(100vh - 98px - 48px);
+  padding: 0 48px;
+  padding-top: 50px;
+  font-size: 10px;
+  background-color: #fff;
+  :global(.ant-card-body) {
+    padding: 0;
+  }
+  :global(.ant-table-thead > tr th::before) {
+    background-color: transparent !important;
+  }
+  :global(.ant-table-thead > tr th) {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+  }
+  :global(.ant-table-thead > tr:first-child th:last-child) {
+    border-right: 1px solid #ddd;
+  }
+  :global(.ant-table-thead > tr > th) {
+    background-color: #EEF0F3;
+  }
+  .data_amount {
+    border-top: 2px solid #000;
+    display: flex;
+    li {
+      flex:1;
+      padding: 8px 0;
+      text-align: center;
+      font-weight: bold;
+    }
+  }
+  .total_box {
+    .total_title {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 10px;
+      font-weight: bold;
+      font-size: 12px;
+      align-items: flex-end;
+      border-bottom: 8px solid #000;
+      > div {
+        text-align: right;
+      }
+    }
+    .total_line {
+      width: 100%;
+      height: 2px;
+      margin-top: 2px;
+      margin-bottom: 10px;
+      background-color: #000;
+    }
+    .table_class {
+      // border: 1px solid green;
+      // min-height: 100%;
+    }
+    .total_table {
+      // border: 1px solid #4D4D4D;
+      border-right: none;
+      > ul {
+        display: flex;
+        li {
+          flex: 1;
+          min-height: 32px;
+          line-height: 32px;
+          text-align: center;
+          background: #F9F9F9;
+        }
+      }
+    }
+  }
+  .data {
+    min-height: calc(100vh - 48px - 50px - 48px - 50px - 58px - 35px - 40px - 75px  - 20px - 20px);
+    .platform_total {
+      display: flex;
+      page-break-inside: avoid;
+      font-weight: bold;
+      li {
+        flex: 1;
+        height: 24px;
+        line-height: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+  .commodity_table {
+    margin-top: 10px;
+    .platform_ul {
+      li {
+        border-bottom: 1px solid #BCBCBC; 
+      }
+    }
+    .statistics {
+      font-weight: bold;
+      > li:first-child, > li:last-child {
+        color: @primary-color;
+      }
+    }
+    .commodity_name {
+      display: flex;
+      justify-content: space-between;
+      height: 40px;
+      padding: 0 20px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 40px;
+      .detail {
+        color: #02a3e2;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+    .ul_box {
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+    }
+    ul {
+      display: flex;
+      page-break-inside: avoid;
+      li {
+        flex: 1;
+        height: 24px;
+        line-height: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .ul_box > ul{
+      li {
+        border-bottom: 1px solid #eef0f3;
+      }
+    }
+    .ul_box > ul:last-child {
+      li {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .statement_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    // margin-top: 188px;
+    padding-bottom: 20px;
+    padding-top: 60px;
+    font-weight: bold;
+    font-size: 16px;
+    > div {
+      display: flex;
+      justify-content: flex-end;
+      width: 50%;
+      margin-bottom: 2px;
+    }
+
+    .bold_line {
+      // width: 50%;
+      height: 10px;
+      background-color: #000;
+    }
+    .small_line {
+      // width: 50%;
+      height: 2px;
+      background-color: #000;
+    }
+    .total_total {
+      font-size: 16px;
+      padding-right: 20px;
+    }
+  }
+}

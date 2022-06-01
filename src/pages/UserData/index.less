@@ -1,0 +1,136 @@
+.option {
+  a {
+    margin-right: 16px;
+  }
+}
+
+.modal {
+  :global(.ant-modal-footer) {
+    text-align: center;
+    border-top: none;
+    height: 70px;
+  }
+  :global(.ant-modal-header) {
+    border-bottom: none;
+  }
+}
+
+.user_detail_header {
+  background-color: #fff;
+  padding: 0 20px;
+  .icon {
+    font-size: 28px;
+    color: @primary-color;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  .user_detail_info {
+    height: 280px;
+    // transition: all .6s;
+    position: relative;
+  }
+  .user_detail_info_hide {
+    height: 0;
+    transition: all .6s;
+    overflow: hidden;
+  }
+  .info_detail {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 70%;
+      .account_info_1 {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        > li{
+          display: flex;
+          // justify-content: space-between;
+          .account_name {
+            width: 60px;
+            text-align: right;
+            margin-right: 16px;
+          }
+        }
+      }
+      .account_info_2, .account_info_3 {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        > li {
+          display: flex;
+          // margin-bottom: 10px;
+          .account_name {
+            width: 76px;
+            text-align: left;
+            margin-right: 16px;
+          }
+          span {
+            max-width: 200px;
+            word-wrap:break-word;
+            word-break:normal; 
+          }
+          .more {
+            color: @primary-color;
+            cursor: pointer;
+            margin-left: 8px;
+          }
+        }
+      }
+      .account_info_3 {
+        .bind {
+          background-color: @primary-color;
+          color: #fff;
+          cursor: pointer;
+          font-size: 12px;
+          padding: 2px 8px;
+          border-radius: 5px;
+          margin-left: 10px;
+        }
+      }
+    }
+    img {
+      width: 63px;
+      height: 63px;
+      margin-bottom: 26px;
+    }
+  }
+  .hide {
+    display: none;
+  }
+  .edit {
+    color: @primary-color;
+    // font-size: 17px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .user_detail_data {
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .user_detail_data_top {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      > div {
+        display: flex;
+        align-items: center;
+      }
+      .number {
+        color: @primary-color;
+        margin-left: 10px;
+        font-size: 22px;
+      }
+    }
+  }
+}

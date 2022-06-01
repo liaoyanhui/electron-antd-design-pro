@@ -1,0 +1,94 @@
+{
+  "name": "yunjie",
+  "version": "1.0.1",
+  "description": "",
+  "main": "main.js",
+"env": "dev",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package-mac": "electron-builder --mac",
+    "package-win64": "electron-builder --win --x64"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^13.1.8",
+    "electron-builder": "^22.11.7"
+  },
+  "dependencies": {
+   
+  },
+  "build": {
+    "asar": true,
+    "appId": "yunjie",
+    "productName": "云界",
+    "publish": [
+      {
+        "provider": "generic",
+        "url": "https://jq-vedio.oss-cn-hangzhou.aliyuncs.com/download/"
+      }
+    ],
+    "files": [
+      "**/*"
+    ],
+    "directories": {
+      "app": "./",
+      "buildResources": "resources",
+      "output": "packages"
+    },
+    "extends": null,
+    "mac": {
+      "icon": "./icon/icon.icns",
+      "artifactName": "${productName}-${version}.mac.${ext}",
+      "target":  {
+        "arch": "universal",
+        "target": "dmg"
+      },
+      "extendInfo": {
+        "CFBundleURLSchemes": [
+          "yunjie"
+        ]
+      }
+    },
+    "dmg": {
+      "title": "云界",
+      "iconSize": 100,
+      "contents": [
+        {
+          "x": 130,
+          "y": 220
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ],
+      "window": {
+        "width": 500,
+        "height": 500
+      }
+    },
+    "win": {
+      "icon": "./icon/icon.ico",
+      "artifactName": "${productName}-${version}.win.${ext}",
+      "target": [
+        "nsis",
+        "zip"
+      ],
+      "verifyUpdateCodeSignature": false,
+      "signingHashAlgorithms": [
+        "sha256",
+        "sha1"
+      ],
+      "signDlls": true,
+      "rfc3161TimeStampServer": "http://timestamp.comodoca.com/rfc3161",
+      "timeStampServer": "http://timestamp.digicert.com"
+    },
+    "nsis": {
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}

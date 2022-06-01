@@ -1,0 +1,41 @@
+.agency_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ 
+  :global(.ant-card-head) {
+    border-bottom: none;
+  }
+  :global(.ant-card) {
+    width: 49%;
+    height: 100%;
+    margin-top: 20px;
+    height: 250px;
+    // padding: 0;
+  }
+
+  :global(.ant-card-body) {
+    height: 100%;
+  }
+  .add {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .agency_ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px 0 40px;
+  }
+  .agency_ul li > div  {
+    margin-bottom: 15px;
+    > span:first-child {
+      color: #BCBCBC;
+      margin-right: 10px;
+    }
+    
+  }
+}

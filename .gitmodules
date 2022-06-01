@@ -1,0 +1,3 @@
+[submodule "mining-api-spec"]
+	path = mining-api-spec
+	url = git@github.com:bitchina-io/mining-api-spec.git

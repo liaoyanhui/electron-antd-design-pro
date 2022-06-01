@@ -1,0 +1,24 @@
+.tab_style {
+  :global(.ant-tabs-tab) {
+    padding: 0 16px;
+    height: 32px;
+    background: #FFFFFF;
+    border: 1px solid #BCBCBC;
+    border-radius: 5px;
+  }
+  :global(.ant-tabs-tab + .ant-tabs-tab) {
+    margin-left: 6px;
+  }
+  :global(.ant-tabs-ink-bar) {
+    width: 0 !important;
+  }
+
+  :global(.ant-tabs-tab-active) {
+    // display: none;
+    border-color: @primary-color;
+    background-color: @primary-color;
+  }
+  :global(.ant-tabs-tab-active > .ant-tabs-tab-btn) {
+    color: #fff;
+  }
+}

@@ -1,0 +1,64 @@
+.modal {
+  :global(.ant-modal-footer) {
+    text-align: center;
+    border-top: none;
+    height: 70px;
+  }
+  :global(.ant-modal-header) {
+    border-bottom: none;
+  }
+}
+
+.card_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.title {
+  text-align: center;
+}
+
+.card_style, .card_style_add {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 320px;
+  height: 200px;
+  margin-bottom: 20px !important; 
+  margin-right: 20px !important;
+  :global(.ant-card-head) {
+    border-bottom: none;
+  }
+  .edit {
+    color: @primary-color;
+    cursor: pointer;
+  }
+}
+.card_style_add {
+  cursor: pointer
+}
+.weixin_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  img {
+    width: 106px;
+    height: 106px;
+  }
+}
+.header_style {
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.uploader {
+  :global(.ant-upload-select-picture-card ) {
+    width: 102px;
+    height: 98px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  .tip {
+    color: #BCBCBC;
+  }
+}

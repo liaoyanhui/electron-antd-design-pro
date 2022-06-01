@@ -1,0 +1,46 @@
+.uploader, .uploader_banner {
+  :global(.ant-upload-select-picture-card) {
+    width: 102px;
+    height: 98px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  .tip {
+    color: #bcbcbc;
+  }
+}
+.uploader_banner {
+  width: 100px;
+  // :global('.ant-upload-picture-card-wrapper') {
+  //   width: 100px;
+  // }
+}
+
+.banner_box {
+  display: flex;
+  .box {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+  }
+  .box:hover {
+    .icon {
+      display: block;
+    }
+  }
+  .icon {
+    display: none;
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+}
+.logo_img {
+  img {
+    width: 100px;
+    height: 96px;
+    border-radius: 10px;
+  }
+}

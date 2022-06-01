@@ -1,0 +1,83 @@
+.modal {
+  :global(.ant-modal-footer) {
+    height: 70px;
+    text-align: center;
+    border-top: none;
+  }
+  :global(.ant-modal-header) {
+    border-bottom: none;
+  }
+  :global(.ant-modal-body) {
+    padding: 24px 24px 5px 24px;
+  }
+  .btn {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+// 扣补
+.deductRepair {
+  min-height: calc(100vh - 98px - 48px);
+  padding: 0 48px;
+  padding-top: 50px;
+  background-color: #fff;
+  .dedect,
+  .repair {
+    .main_title {
+      color: #02a3e2;
+      text-align: center;
+    }
+    .title {
+      padding: 0 0 5px 50px;
+      color: #02a3e2;
+    }
+    .add {
+      padding: 5px 0 0 50px;
+      color: #02a3e2;
+      cursor: pointer;
+    }
+    .table {
+      margin: 20px 0 50px 0;
+    }
+    .bottom {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5px;
+      padding-left: 50px;
+      color: #bcbcbc;
+      span {
+        flex: 1;
+      }
+      .bottom_add {
+        color: #02a3e2;
+        cursor: pointer;
+      }
+      .bottom_total {
+        padding-right: 10px;
+        color: #000;
+        text-align: right;
+      }
+    }
+    ul {
+      display: flex;
+      padding-left: 50px;
+      background: #f9f9f9;
+      li {
+        flex: 1;
+        margin: 5px 0;
+      }
+    }
+    .content {
+      color: #bcbcbc;
+    }
+  }
+  .btn {
+    display: flex;
+    justify-items: center;
+    .sure {
+      width: 100px;
+      margin: 50px auto;
+    }
+  }
+}

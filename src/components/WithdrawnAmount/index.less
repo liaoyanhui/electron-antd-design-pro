@@ -1,0 +1,49 @@
+.modal {
+  :global(.ant-modal-footer) {
+    text-align: center;
+    border-top: none;
+    height: 70px;
+  }
+  :global(.ant-modal-header) {
+    border-bottom: none;
+  }
+  li {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // margin-right: 20px;
+    // height: 70px;
+    margin-bottom: 10px;
+  }
+  .value {
+    color: @primary-color;
+  }
+
+  .withdrawn {
+    margin: 10px 0 20px 0;
+    .amount {
+     color: #02A3E2;
+     font-size: 24px; 
+     font-weight: 500;
+     margin-left: 10px;
+    }
+  }
+  :global(.ant-form-item-required) {
+    width: 100%;
+  }
+  .form_label {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .label {
+    color: #02A3E2;
+  }
+  .code {
+    text-align: center;
+    margin: 10px 0 20px 0;
+  }
+  .max {
+    cursor: pointer;
+  }
+}

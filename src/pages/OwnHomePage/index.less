@@ -1,0 +1,61 @@
+.home_page {
+  min-height: 100vh;
+}
+.home_page_header {
+  display: flex;
+  justify-content: space-between;
+  > :global(.ant-card) {
+    width: 24%;
+    // padding: 0;
+  }
+}
+
+.home_page_line {
+  margin-top: 20px;
+  height: 250px;
+  > :global(.ant-card) {
+    height: 100%;
+  }
+}
+
+.home_page_agency_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ 
+  :global(.ant-card-head) {
+    border-bottom: none;
+  }
+  :global(.ant-card) {
+    width: 49%;
+    height: 100%;
+    margin-top: 20px;
+    height: 250px;
+    // padding: 0;
+  }
+
+  :global(.ant-card-body) {
+    height: 100%;
+  }
+  .home_page_add {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .agency_ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px 0 40px;
+  }
+  .agency_ul li > div  {
+    margin-bottom: 15px;
+    > span:first-child {
+      color: #BCBCBC;
+      margin-right: 10px;
+    }
+    
+  }
+}

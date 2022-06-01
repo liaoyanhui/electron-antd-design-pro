@@ -1,0 +1,102 @@
+.home_page {
+  min-height: calc(100vh - 50px -48px - 48px);
+}
+// .home_page_header {
+//   display: flex;
+//   justify-content: space-between;
+//   margin-bottom: 12px;
+//   // > :global(.ant-card) {
+//   //   width: 24%;
+//   // }
+// }
+
+.home_page_line {
+  margin-top: 20px;
+  height: 250px;
+  background-color: #fff;
+  display: flex;
+  > div {
+    width: 50%;
+    // height: 100%;
+  }
+}
+
+.home_page_agency_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ 
+  :global(.ant-card-head) {
+    border-bottom: none;
+  }
+  :global(.ant-card) {
+    width: 49%;
+    height: 100%;
+    margin-top: 20px;
+    height: 250px;
+    // padding: 0;
+  }
+
+  :global(.ant-card-body) {
+    height: calc(100% - 57px);
+  }
+  .home_page_add {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .agency_ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px 0 0;
+    height: 100%;
+  }
+  .agency_ul li > div  {
+    margin-bottom: 10px;
+    > span:first-child {
+      font-size: 12px;
+      display: inline-block;
+      width: 55px;
+      color: #BCBCBC;
+      margin-right: 10px;
+    }
+    
+  }
+  
+  .platform_title {
+    display: flex;
+    align-items: center;
+    .title_amount {
+      color: #02A3E2;
+      font-size: 21px;
+      margin: 0 10px;
+    }
+    .title_serviceAmount {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      color: #BCBCBC;
+      span {
+        color: #02A3E2;
+        font-size: 12px;
+        margin: 0 10px;
+      }
+    }
+  }
+}
+
+// 创建平台
+.uploader, .uploader_banner {
+  :global(.ant-upload-select-picture-card) {
+    width: 102px;
+    height: 98px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+  .tip {
+    color: #bcbcbc;
+  }
+}
